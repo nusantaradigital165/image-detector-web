@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>PELATIHAN KKA PANDEGLANG 2025</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light text-center py-5">
+  <div class="container">
+    <h1 class="mb-3 text-primary">PELATIHAN KKA PANDEGLANG TAHUN 2025</h1>
+    <h4 class="mb-4 text-secondary">KARYA KELOMPOK 2</h4>
+
+    <video id="camera" width="300" autoplay class="rounded shadow"></video><br>
+    <button class="btn btn-success my-3" onclick="capture()">Ambil Gambar</button>
+
+    <canvas id="snapshot" width="300" height="225" style="display:none;"></canvas>
+    <div id="result" class="mt-4"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='webcam.js') }}"></script>
+</body>
+</html>
